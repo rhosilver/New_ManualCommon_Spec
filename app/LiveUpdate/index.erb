@@ -1,0 +1,35 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Image Page ORIG</h1>
+    <a href="<%= Rho::RhoConfig.start_path %>" class="ui-btn-left" data-icon="home" data-direction="reverse"
+       <%= "data-ajax='false'" if is_bb6 %>>Home</a>
+      
+  </div>
+
+  <div data-role="content">
+   <br>
+   <a href="modified.html"> Modified HTML</a>
+   <br>
+   
+   <%= link_to '[show_popup]', { :action => :show_popup }%> 
+   <br>
+<%= link_to '[Added image file]', { :action => :pageimage }%> 
+   <br>
+<%= link_to '[open added page]', { :action => :pageadded }%> 
+   <br>
+<%= link_to '[open removed page]', { :action => :pageremoved }%> 
+   <br>
+<%= link_to '[show popup]', { :action => :show_popup }%> 
+   <br>
+<a href="auto_added.html"> Open newly added File</a>
+   <br>
+<a href="Newmodel">Newmodel link</a>
+   <br>
+<a href="scssEx.html">Changes in scss file</a><br>
+<a href="specRunner.html">SpecRunner</a>
+   <br>
+  </div>
+
+</div>
+

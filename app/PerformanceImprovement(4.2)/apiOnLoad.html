@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Api On Load</title>
+	<script type="text/javascript" src="/public/api/rhoapi-modules.js"></script>
+	<script type="text/javascript">
+	var myOnLoad = function(){
+	 	console.log("myOnLoad: init");
+        var retData = "<li>Rho.Application.appName : " + Rho.Application.appName + "</li>" +
+        "<li>Rho.Log.level : " + Rho.Log.level + "</li>" +
+        "<li>Rho.NativeMenubar.mainButton : " + Rho.NativeMenubar.mainButton + "</li>" +
+        "<li>Rho.System.platform : " + Rho.System.platform + "</li>";
+        document.getElementById('res').innerHTML = retData;
+	};
+	</script>
+</head>
+<body onload="myOnLoad()">
+	<h3>To check the Application loading time (Page with api module's property is accessed).</h3>
+	<ul id="res"></ul>
+</body>
+</html>
