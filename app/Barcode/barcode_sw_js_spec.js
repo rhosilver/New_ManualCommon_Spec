@@ -44,7 +44,7 @@ describe("Barcode Test", function() {
 	});
 
 	if (isAndroidOrAppleOrWindowsPhone8Platform())
-	{
+	{                       
 		it("VT282-1778 | call setDefault with SCN and take |"+ scnid, function() {
 
 			runs(function()
@@ -75,7 +75,6 @@ describe("Barcode Test", function() {
 				});	
 			});
 		});
-
 		it("VT282-1790 | take with callback as function |"+ scnid, function() {
 			
 			runs(function()
