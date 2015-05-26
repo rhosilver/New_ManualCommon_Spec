@@ -352,7 +352,7 @@ describe("Rho.Config module, removeProperties specs", function(){
         runs(function(){
             var firstVal = Rho.Config.isPropertyExists("full_screen_user");
             spec.addResult("First value full_screen: ", firstVal);
-            Rho.Config.removeProperty("full_screen", false);
+            Rho.Config.removeProperty("full_screen_user", false);
             var secondVal = Rho.Config.isPropertyExists("full_screen_user");
             spec.addResult("Second value full_screen: ", secondVal);
 		    spec.displayResults();
