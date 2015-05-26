@@ -18,7 +18,7 @@ iphone:
   configuration: "Release"
   provisionprofile: 
   codesignidentity: "iPhone Developer"
-  entitlements: 
+  entitlements: ./production/Entitlements.plist 
   extensions:
     - sensor
     - barcode
